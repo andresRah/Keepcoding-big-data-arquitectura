@@ -84,3 +84,6 @@ if __name__ == "__main__":
 
 ## Diagrama
 Se adjunta un diagrama en formato PNG que ilustra el flujo de datos y las interacciones entre los componentes de la arquitectura DAaaS.
+
+![Architecture drawio](https://github.com/andresRah/Keepcoding-big-data-arquitectura/assets/10521199/baf9de0f-d081-43b9-8035-919e2ea589fc)
+

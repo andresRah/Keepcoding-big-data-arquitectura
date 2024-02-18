@@ -66,16 +66,16 @@ La estrategia de DAaaS consistirá en recopilar y analizar datos en tiempo real 
 # DAaaS Operating Model Design and Rollout
 Personalización de los modelos operativos DAaaS para adaptarse a los procesos y estructura organizacional del cliente. Incluye seguimiento de consumo y mecanismos de informe.
 
-## **• Transmisión de Datos de Sensores:**
+### **• Transmisión de Datos de Sensores:**
    Los datos capturados por los sensores se transmitirán en tiempo real. No obstante, para optimizar el uso del ancho de banda y los recursos en la nube, se contempla la posibilidad de configurar envíos periódicos (diarios o semanales) que incluyan un promedio de las lecturas, basándose en su relevancia.
 
-## **• Integración de Sistemas Propios:**
+### **• Integración de Sistemas Propios:**
    La integración de los sistemas operativos de la granja y el sistema contable con nuestra plataforma se llevará a cabo semanalmente mediante procesos ETL, garantizando una sincronización eficiente y actualizada de los datos.
 
-## **• Ejecución del Crawler:**
+### **• Ejecución del Crawler:**
    El crawler se programará para ejecutarse diariamente, asegurando la recopilación continua de datos relevantes del mercado y tendencias de precios de aguacates.
 
-## **• Procesamiento de Datos y Generación de Pronósticos:**
+### **• Procesamiento de Datos y Generación de Pronósticos:**
    Al concluir el procesamiento de datos y la generación de pronósticos por parte de Google Cloud Dataproc, se activarán automáticamente tres tareas críticas:
 
    ### **1. Almacenamiento de Datos en CSV:**

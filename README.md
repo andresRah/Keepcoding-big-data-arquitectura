@@ -48,7 +48,7 @@ La estrategia de DAaaS consistirá en recopilar y analizar datos en tiempo real 
 - **Google Cloud App Engine**: Envío de la notificación push final a los usuarios.
 
 ## Inventario final de servicios en la nube
-- Servicios de Google Cloud utilizados en la arquitectura: Pub/Sub, Dataflow, BigTable, Cloud Storage, BigQuery, y App Engine.
+Servicios de Google Cloud utilizados en la arquitectura: Pub/Sub, Dataflow, BigTable, Cloud Storage, BigQuery, y App Engine.
 
 - 	**Google Cloud Pub/Sub Streaming** - Puntos para lectura de sensores.
 -	**Google Cloud Dataflow** - Transaction streams.

@@ -39,10 +39,10 @@ La estrategia de DAaaS consistirá en recopilar y analizar datos en tiempo real 
 ### 4) Almacenamiento de Documentos en Google Cloud Storage
 - Almacenamiento del resultado de los procesos de adquisición de datos, incluyendo archivos generados y un dataset de Kaggle con información de consumo de productos por eventos relevantes.
 
-## 5) Análisis con BigQuery
+### 5) Análisis con BigQuery
 - **Google Cloud BigQuery**: Análisis y reportes de negocio posterior al procesamiento de datos.
 
-## 6) Notificación Push
+### 6) Notificación Push
 - **Google Cloud Pub/Sub**: Punto de salida conectado a Google DataProc - Proceso de forecasting.
 - **Google Cloud Compute Engine**: Máquina virtual para procesar el resultado y formatear el mensaje de la notificación push además de determinar si se trata de un valor anómalo que genere la alerta.
 - **Google Cloud App Engine**: Envío de la notificación push final a los usuarios.

@@ -78,14 +78,14 @@ Personalización de los modelos operativos DAaaS para adaptarse a los procesos y
 ### **D) Procesamiento de Datos y Generación de Pronósticos:**
    Al concluir el procesamiento de datos y la generación de pronósticos por parte de Google Cloud Dataproc, se activarán automáticamente tres tareas críticas:
 
-      #### **1. Almacenamiento de Datos en CSV:**
-      Los datos procesados se guardarán en formato CSV en Google Cloud Storage tras cada ciclo de procesamiento, lo cual se realizará diariamente.
+   ### **1. Almacenamiento de Datos en CSV:**
+   Los datos procesados se guardarán en formato CSV en Google Cloud Storage tras cada ciclo de procesamiento, lo cual se realizará diariamente.
    
-      #### **2. Almacenamiento de Pronósticos en BigQuery:**
-      Los pronósticos generados se almacenarán en Google BigQuery siguiendo la misma frecuencia diaria para facilitar el acceso y análisis.
+   ### **2. Almacenamiento de Pronósticos en BigQuery:**
+   Los pronósticos generados se almacenarán en Google BigQuery siguiendo la misma frecuencia diaria para facilitar el acceso y análisis.
    
-      #### **3. Envío de Notificaciones Push:**
-      Una máquina virtual en Google Compute Engine evaluará los datos procesados en busca de anomalías o picos en la demanda de aguacates. Si se identifica una tendencia significativa, se enviará una notificación push a través de Google App Engine, sin una frecuencia predefinida, ya que dependerá de la detección de eventos críticos.
+   ### **3. Envío de Notificaciones Push:**
+   Una máquina virtual en Google Compute Engine evaluará los datos procesados en busca de anomalías o picos en la demanda de aguacates. Si se identifica una tendencia significativa, se enviará una notificación push a través de Google App Engine, sin una frecuencia predefinida, ya que dependerá de la detección de eventos críticos.
 
 # Desarrollo de la Plataforma DAaaS
 Se adjunta un desarrollo básico de crawler escrito en Python a la página de mercadona.es

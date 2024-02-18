@@ -66,26 +66,26 @@ La estrategia de DAaaS consistirá en recopilar y analizar datos en tiempo real 
 # DAaaS Operating Model Design and Rollout
 Personalización de los modelos operativos DAaaS para adaptarse a los procesos y estructura organizacional del cliente. Incluye seguimiento de consumo y mecanismos de informe.
 
-### **• Transmisión de Datos de Sensores:**
+### **A) Transmisión de Datos de Sensores:**
    Los datos capturados por los sensores se transmitirán en tiempo real. No obstante, para optimizar el uso del ancho de banda y los recursos en la nube, se contempla la posibilidad de configurar envíos periódicos (diarios o semanales) que incluyan un promedio de las lecturas, basándose en su relevancia.
 
-### **• Integración de Sistemas Propios:**
+### **B) Integración de Sistemas Propios:**
    La integración de los sistemas operativos de la granja y el sistema contable con nuestra plataforma se llevará a cabo semanalmente mediante procesos ETL, garantizando una sincronización eficiente y actualizada de los datos.
 
-### **• Ejecución del Crawler:**
+### **C) Ejecución del Crawler:**
    El crawler se programará para ejecutarse diariamente, asegurando la recopilación continua de datos relevantes del mercado y tendencias de precios de aguacates.
 
-### **• Procesamiento de Datos y Generación de Pronósticos:**
+### **D) Procesamiento de Datos y Generación de Pronósticos:**
    Al concluir el procesamiento de datos y la generación de pronósticos por parte de Google Cloud Dataproc, se activarán automáticamente tres tareas críticas:
 
-      ### **1. Almacenamiento de Datos en CSV:**
-      Los datos procesados se guardarán en formato CSV en Google Cloud Storage tras cada ciclo de procesamiento, lo cual se realizará diariamente.
+   ### **1. Almacenamiento de Datos en CSV:**
+   Los datos procesados se guardarán en formato CSV en Google Cloud Storage tras cada ciclo de procesamiento, lo cual se realizará diariamente.
    
-      ### **2. Almacenamiento de Pronósticos en BigQuery:**
-      Los pronósticos generados se almacenarán en Google BigQuery siguiendo la misma frecuencia diaria para facilitar el acceso y análisis.
+   ### **2. Almacenamiento de Pronósticos en BigQuery:**
+   Los pronósticos generados se almacenarán en Google BigQuery siguiendo la misma frecuencia diaria para facilitar el acceso y análisis.
    
-      ### **3. Envío de Notificaciones Push:**
-      Una máquina virtual en Google Compute Engine evaluará los datos procesados en busca de anomalías o picos en la demanda de aguacates. Si se identifica una tendencia significativa, se enviará una notificación push a través de Google App Engine, sin una frecuencia predefinida, ya que dependerá de la detección de eventos críticos.
+   ### **3. Envío de Notificaciones Push:**
+   Una máquina virtual en Google Compute Engine evaluará los datos procesados en busca de anomalías o picos en la demanda de aguacates. Si se identifica una tendencia significativa, se enviará una notificación push a través de Google App Engine, sin una frecuencia predefinida, ya que dependerá de la detección de eventos críticos.
 
 # Desarrollo de la Plataforma DAaaS
 Se adjunta un desarrollo básico de crawler escrito en Python a la página de mercadona.es
